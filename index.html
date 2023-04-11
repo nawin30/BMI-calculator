@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BMI ratio</title>
+</head>
+<body>
+    <h1 class="glow">BMI Calculator</h1>
+<div class="greeting">
+    <p id="greet"></p>
+</div>
+<div class="jog">
+    <img src="./fitness-stats-animation.svg" alt="jog">
+</div>
+<div class="scale">
+    <img src="./fit.jpg" alt="fit">
+</div>
+    <div class="container">
+
+    <p><label for="ht">Height (in cm)</label><input type="number" id="ht"></p>
+
+    <p><label for="wt">Weight (in kg)</label><input type="number" id="wt"></p>
+
+   <button id="submit"onclick="calculateBmi()">Calculate</button>
+
+   <button id="clear"onclick="reload()">Clear</button>
+
+  </div>
+
+
+  <div class="result">
+   <h2 id="heading"></h2>
+   <p id="bmi-ratio"></p>
+   <p id="message"></p>
+</div>
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>

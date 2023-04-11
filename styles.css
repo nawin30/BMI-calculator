@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    background-color: #06535b;
+    height: 50px;
+}
+
+.container{
+   max-width: 1000px;
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content:center;
+   text-align: center;
+   height: 200px;
+   margin-top: 70px; 
+}
+
+input{
+    border:  3px solid #ffbf00;
+    outline-color: #FFE15D;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 275px;
+    width: 100%;
+    height: 30px;
+}
+
+input:focus-visible{
+
+  border:1px solid#ffcf40;
+}
+
+button {
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 10px;
+  color: white;
+  padding: 8px 24px;
+  margin: 8px 2px;   
+}
+
+.glow{
+    font: size 35px;
+    color: #FAF8F1;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #FAF8F1, 0 0 20px #FAF8F1, 0 0 30px #FAEAB1, 0 0 40px #FAEAB1, 0 0 50px #FAEAB1, 0 0 60px #FFE15D, 0 0 70px #FFE15D;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #ffbf00, 0 0 30px #ffcf40, 0 0 40px #ffcf40, 0 0 50px #ffcf40, 0 0 60px #ffcf40, 0 0 70px #ffcf40, 0 0 80px #ffcf40;
+    }
+  }
+
+.result{
+    max-width: 600px;
+   width: 100%;
+   background-color: #fff0d3;
+   margin: 0 auto;
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content:center;
+   text-align: center;
+   height: 200px;
+   margin-top: 70px;
+   border-radius: 30px;
+}
+
+h2{
+  color: #32325d;
+  font-family: Merriweather;
+  
+}
+
+#bmi-ratio{
+  color: #32325d;
+  font-family: Merriweather;
+  font-size: 35px;
+
+}
+
+#message{
+  color: #32325d;
+  font-family: Merriweather;
+  font-size: 18px;
+
+}
+
+.greeting{
+    max-width: 600px;
+   width: 100%;
+   background-color:#d3368a;
+   margin: 0 auto;
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content:center;
+   text-align: center;
+   height: 75px;
+   margin-top: 35px;
+   border-radius: 30px;
+   color: white;
+}
+
+#greet{
+  font-size: 18px;
+}
+
+.jog img{
+  width: 465px;
+  height: 465px;
+  position: absolute;
+  top: 50;
+}
+
+.scale img{
+  width: 465px;
+  height: 465px;
+  position: absolute;
+  right: 0;
+  top: 50;
+}
+
+@media(max-width:550px){
+  .jog img{
+    display: none;
+  }
+.scale img{
+  display: none;
+}
+}
+
+@media(max-width:1530px){
+  .jog img{
+    display: none;
+  }
+.scale img{
+  display: none;
+}
+}
